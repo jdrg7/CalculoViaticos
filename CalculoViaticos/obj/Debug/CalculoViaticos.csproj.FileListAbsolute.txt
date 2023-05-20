@@ -1,0 +1,17 @@
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\bin\Debug\CalculoViaticos.exe.config
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\bin\Debug\CalculoViaticos.exe
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\bin\Debug\CalculoViaticos.pdb
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\obj\Debug\CalculoViaticos.csproj.AssemblyReference.cache
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\obj\Debug\CalculoViaticos.csproj.SuggestedBindingRedirects.cache
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\obj\Debug\CalculoViaticos.FORMULARIOS.FrmEmpleados.resources
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\obj\Debug\CalculoViaticos.FrmGeneral.resources
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\obj\Debug\CalculoViaticos.FrmPrincipal.resources
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\obj\Debug\CalculoViaticos.Properties.Resources.resources
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\obj\Debug\CalculoViaticos.csproj.GenerateResource.cache
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\obj\Debug\CalculoViaticos.csproj.CoreCompileInputs.cache
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\obj\Debug\CalculoViaticos.exe
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\obj\Debug\CalculoViaticos.pdb
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\obj\Debug\CalculoViaticos.FORMULARIOS.FrmLogin.resources
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\obj\Debug\CalculoViaticos.csproj.CopyComplete
+C:\Users\jgarc\source\repos\CalculoViaticos\CalculoViaticos\obj\Debug\CalculoViaticos.FORMULARIOS.frmRecuperarContra.resources
