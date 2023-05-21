@@ -83,65 +83,146 @@ namespace CalculoViaticos
 
         private void txtnodiasdesayuno_TextChanged(object sender, EventArgs e)
         {
-            diasDesayuno = int.Parse(txtnodiasdesayuno.Text);
-            float subTotal = diasDesayuno * asignacionDesayuno;
-            txtsubdesayuno.Text = subTotal.ToString();
+            string texto = txtnodiasdesayuno.Text;
+
+            if (string.IsNullOrEmpty(texto))
+            {
+                MessageBox.Show("El campo de texto no puede estar vacío.");
+            }
+            else
+            {
+                diasDesayuno = int.Parse(txtnodiasdesayuno.Text);
+                float subTotal = diasDesayuno * asignacionDesayuno;
+                txtsubdesayuno.Text = subTotal.ToString();
+            }
         }
 
         private void txtasignaciondesayuno_TextChanged(object sender, EventArgs e)
         {
-            asignacionDesayuno = float.Parse(txtasignaciondesayuno.Text);
-            float subTotal = diasDesayuno * asignacionDesayuno;
-            txtsubdesayuno.Text = subTotal.ToString();
+            string texto = txtasignaciondesayuno.Text;
+
+            if (string.IsNullOrEmpty(texto))
+            {
+                MessageBox.Show("El campo de texto no puede estar vacío.");
+            }
+            else
+            {
+                asignacionDesayuno = float.Parse(txtasignaciondesayuno.Text);
+                float subTotal = diasDesayuno * asignacionDesayuno;
+                txtsubdesayuno.Text = subTotal.ToString();
+            }
         }
 
         private void txtsubdesayuno_TextChanged(object sender, EventArgs e)
         {
-            totaldesayuno = float.Parse(txtsubdesayuno.Text);
-            float subTotal = totaldesayuno + totalalmuerzo + totalcena;
-            txttotalali.Text = subTotal.ToString();
+            string texto = txtsubdesayuno.Text;
+
+            if (string.IsNullOrEmpty(texto))
+            {
+                MessageBox.Show("El campo de texto no puede estar vacío.");
+            }
+            else
+            {
+                totaldesayuno = float.Parse(txtsubdesayuno.Text);
+                float subTotal = totaldesayuno + totalalmuerzo + totalcena;
+                txttotalali.Text = subTotal.ToString();
+            }
         }
 
         private void txtsubalmuerzo_TextChanged(object sender, EventArgs e)
         {
-            totalalmuerzo = float.Parse(txtsubalmuerzo.Text);
-            float subTotal = totaldesayuno + totalalmuerzo + totalcena;
-            txttotalali.Text = subTotal.ToString();
+            string texto = txtsubalmuerzo.Text;
+
+            if (string.IsNullOrEmpty(texto))
+            {
+                MessageBox.Show("El campo de texto no puede estar vacío.");
+            }
+            else
+            {
+                totalalmuerzo = float.Parse(txtsubalmuerzo.Text);
+                float subTotal = totaldesayuno + totalalmuerzo + totalcena;
+                txttotalali.Text = subTotal.ToString();
+            }
         }
 
         private void txtsubcena_TextChanged(object sender, EventArgs e)
         {
-            totalcena = float.Parse(txtsubcena.Text);
-            float subTotal = totaldesayuno + totalalmuerzo + totalcena;
-            txttotalali.Text = subTotal.ToString();
+            string texto = txtsubcena.Text;
+
+            if (string.IsNullOrEmpty(texto))
+            {
+                MessageBox.Show("El campo de texto no puede estar vacío.");
+            }
+            else
+            {
+                totalcena = float.Parse(txtsubcena.Text);
+                float subTotal = totaldesayuno + totalalmuerzo + totalcena;
+                txttotalali.Text = subTotal.ToString();
+            }
         }
 
         private void txtnodiasalmuerzo_TextChanged(object sender, EventArgs e)
         {
-            diasAlmuerzo = int.Parse(txtnodiasalmuerzo.Text);
-            float subTotal = diasAlmuerzo * asignacionAlmuerzo;
-            txtsubalmuerzo.Text = subTotal.ToString();
+            string texto = txtnodiasalmuerzo.Text;
+
+            if (string.IsNullOrEmpty(texto))
+            {
+                MessageBox.Show("El campo de texto no puede estar vacío.");
+            }
+            else
+            {
+                diasAlmuerzo = int.Parse(txtnodiasalmuerzo.Text);
+                float subTotal = diasAlmuerzo * asignacionAlmuerzo;
+                txtsubalmuerzo.Text = subTotal.ToString();
+            }
         }
 
         private void txtasignacionalmuerzo_TextChanged(object sender, EventArgs e)
         {
-            asignacionAlmuerzo = float.Parse(txtasignacionalmuerzo.Text);
-            float subTotal = diasAlmuerzo * asignacionAlmuerzo;
-            txtsubalmuerzo.Text = subTotal.ToString();
+            string texto = txtasignacionalmuerzo.Text;
+
+            if (string.IsNullOrEmpty(texto))
+            {
+                MessageBox.Show("El campo de texto no puede estar vacío.");
+            }
+            else
+            {
+                asignacionAlmuerzo = float.Parse(txtasignacionalmuerzo.Text);
+                float subTotal = diasAlmuerzo * asignacionAlmuerzo;
+                txtsubalmuerzo.Text = subTotal.ToString();
+            }
         }
 
         private void txtnodiascena_TextChanged(object sender, EventArgs e)
         {
-            diasCena = int.Parse(txtnodiascena.Text);
-            float subTotal = diasCena * asignacionCena;
-            txtsubcena.Text = subTotal.ToString();
+            string texto = txtnodiascena.Text;
+
+            if (string.IsNullOrEmpty(texto))
+            {
+                MessageBox.Show("El campo de texto no puede estar vacío.");
+            }
+            else
+            {
+                diasCena = int.Parse(txtnodiascena.Text);
+                float subTotal = diasCena * asignacionCena;
+                txtsubcena.Text = subTotal.ToString();
+            }
         }
 
         private void txtasignacioncena_TextChanged(object sender, EventArgs e)
         {
-            asignacionCena = float.Parse(txtasignacioncena.Text);
-            float subTotal = diasCena * asignacionCena;
-            txtsubcena.Text = subTotal.ToString();
+            string texto = txtasignacioncena.Text;
+
+            if (string.IsNullOrEmpty(texto))
+            {
+                MessageBox.Show("El campo de texto no puede estar vacío.");
+            }
+            else
+            {
+                asignacionCena = float.Parse(txtasignacioncena.Text);
+                float subTotal = diasCena * asignacionCena;
+                txtsubcena.Text = subTotal.ToString();
+            }
         }
 
         private void txttotalali_TextChanged(object sender, EventArgs e)

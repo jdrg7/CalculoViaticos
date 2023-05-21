@@ -53,6 +53,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Validaciones.cs" />
     <Compile Include="ConexionSql\ConnectionToSql.cs" />
     <Compile Include="ConexionSql\InicioSesion.cs" />
     <Compile Include="CRUD\Alimentacion.cs" />

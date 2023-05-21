@@ -147,6 +147,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(303, 22);
             this.txtNombre.TabIndex = 10;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // txtApellido
             // 
@@ -154,6 +155,7 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(303, 22);
             this.txtApellido.TabIndex = 11;
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
             // 
             // txtDireccion
             // 
@@ -172,9 +174,11 @@
             // txtDni
             // 
             this.txtDni.Location = new System.Drawing.Point(144, 280);
+            this.txtDni.MaxLength = 13;
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(303, 22);
             this.txtDni.TabIndex = 17;
+            this.txtDni.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDni_KeyPress);
             // 
             // btnGuardar
             // 
@@ -222,6 +226,7 @@
             // 
             this.txtCodigo.Location = new System.Drawing.Point(144, 151);
             this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(303, 22);
             this.txtCodigo.TabIndex = 26;
             // 

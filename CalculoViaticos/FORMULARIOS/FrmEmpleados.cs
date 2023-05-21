@@ -1,4 +1,5 @@
-﻿using CalculoViaticos.CRUD;
+﻿using CalculoViaticos.Clases;
+using CalculoViaticos.CRUD;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -79,6 +80,32 @@ namespace CalculoViaticos.FORMULARIOS
         private void cmbPuesto_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Bloquea la entrada del carácter no permitido
+            }
+
+        }
+
+        private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Bloquea la entrada del carácter no permitido
+            }
+
+        }
+
+        private void txtDni_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Bloquea la entrada del carácter no permitido
+            }
         }
     }
 }
