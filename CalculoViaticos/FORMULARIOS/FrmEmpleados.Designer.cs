@@ -45,8 +45,8 @@
             this.cmbPuesto = new System.Windows.Forms.ComboBox();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgEmpleados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -222,14 +222,6 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Location = new System.Drawing.Point(144, 151);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.ReadOnly = true;
-            this.txtCodigo.Size = new System.Drawing.Size(303, 22);
-            this.txtCodigo.TabIndex = 26;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -240,6 +232,14 @@
             this.label3.Size = new System.Drawing.Size(102, 31);
             this.label3.TabIndex = 25;
             this.label3.Text = "CODIGO";
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(144, 151);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.ReadOnly = true;
+            this.txtCodigo.Size = new System.Drawing.Size(303, 22);
+            this.txtCodigo.TabIndex = 26;
             // 
             // FrmEmpleados
             // 
@@ -294,7 +294,7 @@
         private System.Windows.Forms.ComboBox cmbPuesto;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtCodigo;
     }
 }

@@ -40,10 +40,17 @@ namespace CalculoViaticos.FORMULARIOS
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            empleados.actualizar(int.Parse(txtCodigo.Text), txtNombre.Text, txtApellido.Text, int.Parse(cmbPuesto.SelectedValue.ToString()), txtDni.Text, txtCorreo.Text, txtDireccion.Text);
-            MessageBox.Show("Empleado actualizado correctamente");
-            limpiar();
-            metodos.MostrarEmpleados(dgEmpleados);
+            try
+            {
+                empleados.actualizar(int.Parse(txtCodigo.Text), txtNombre.Text, txtApellido.Text, int.Parse(cmbPuesto.SelectedValue.ToString()), txtDni.Text, txtCorreo.Text, txtDireccion.Text);
+                MessageBox.Show("Empleado actualizado correctamente");
+                limpiar();
+                metodos.MostrarEmpleados(dgEmpleados);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lo siento debe seleccionar un empleado");
+            }
         }
 
         private void dgEmpleados_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -70,11 +77,18 @@ namespace CalculoViaticos.FORMULARIOS
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int Codigo = int.Parse(dgEmpleados.CurrentRow.Cells[0].Value.ToString());
-            empleados.borrar(Codigo);
-            MessageBox.Show("Empleado eliminado correctamente");
-            limpiar();
-            metodos.MostrarEmpleados(dgEmpleados);
+            try
+            {
+                int Codigo = int.Parse(txtCodigo.Text);
+                empleados.borrar(Codigo);
+                MessageBox.Show("Empleado eliminado correctamente");
+                limpiar();
+                metodos.MostrarEmpleados(dgEmpleados);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lo siento debe selleccionar un empleado");
+            }
         }
 
         private void cmbPuesto_SelectedIndexChanged(object sender, EventArgs e)
